@@ -24,6 +24,7 @@ This will make a directory called 'RestaurantSorterProject' which will have all 
 
 This will create a 'branch' for you. If you make edits to the project in this branch, no one else will recieve this edit. This is useful if you're making experimental changes, or are changing something that could affect everyone else's code. Once you're done, you can manually give these changes to everyone else
 > git branch "your name here"
+> git push --set-upstream origin "Your name here again"
 
 # Normal Usage of Git
 
@@ -42,7 +43,7 @@ And then feel free to start coding
 
 TLDR:
 > git pull
-git checkout "Your name here"
+> git checkout "Your name here"
 
 ## During and end of a coding session
 
