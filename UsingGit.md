@@ -37,13 +37,14 @@ Always do this command before you start coding. This makes it so much easier if 
 
 then make your way into your branch
 > git checkout "Your name here"
-> git pull origin
+> git pull origin main
 
 And then feel free to start coding
 
 TLDR:
 > git pull
 > git checkout "Your name here"
+> git pull origin main
 
 ## During and end of a coding session
 
@@ -52,5 +53,19 @@ Make sure to 'push' frequently. If you don't save your code, it could get lost. 
 git add -A adds any new files you've added to the project. So if you make a txt.txt file, it'll add the file the next time you commit
 > git add -A
 
-Commit is what give the 
+git commit is you committing to a change. the commit message is information you can choose to give anyone who reads your code
 > git commit -am "Enter a commit message here"
+
+git push officially updates the github page, so if anyone git pulls, they now have all the changes you just pushed as well
+> git push
+
+TLDR:
+> git add -A
+> git commit -am "Message"
+> git push
+
+## Finished a component and want to get it out of your branch
+
+After you officially finish a function and want to add it to the main branch, just 'git checkout' to the main branch, and 'git pull origin (your name here)'
+> git checkout main
+> git pull origin "your name here"
