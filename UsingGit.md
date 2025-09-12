@@ -15,6 +15,11 @@ It's less for right now, but it basically shows your email when someone else wou
 Makes 'merging' simpler (When I make changes, and then you want your computer to have those changes)
 > git config --global pull.rebase false
 
+TLDR:
+> git config --global user.name "Joseph Smith"
+> git config --global user.email "joesmith@example.com"
+> git config --global pull.rebase false
+
 # Starting the Project
 
 Use the terminal to cd to where the project should be. Then type this in
@@ -23,6 +28,12 @@ This will make a directory called 'RestaurantSorterProject' which will have all 
 > git clone git@github.com:Worgrot4/RestaurantSorterProject.git
 
 This will create a 'branch' for you. If you make edits to the project in this branch, no one else will recieve this edit. This is useful if you're making experimental changes, or are changing something that could affect everyone else's code. Once you're done, you can manually give these changes to everyone else
+> git branch "your name here"
+> git push --set-upstream origin "Your name here again"
+
+TLDR:
+> git clone git@github.com:Worgrot4/RestaurantSorterProject.git
+> cd RestaurantSorterProject
 > git branch "your name here"
 > git push --set-upstream origin "Your name here again"
 
