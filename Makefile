@@ -5,7 +5,7 @@ default:
 push:
 	git add -A
 	git commit -am "$(ARGS)"
-	git push
+	git push 2>&1
 update_main:
 	make push
 	$(VAR) = git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*'
