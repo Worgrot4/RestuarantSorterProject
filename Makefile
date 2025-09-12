@@ -8,5 +8,5 @@ push:
 	@-git push || true
 update_main:
 	make push
-	VAR=$(shell git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*')
+	VAR:=$(shell git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*')
 	echo "$(VAR)"
