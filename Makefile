@@ -5,3 +5,4 @@ default:
 push:
 	git add -A
 	git commit -am $(ARGS)
+	git push
