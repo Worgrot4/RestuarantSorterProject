@@ -6,3 +6,9 @@ push:
 	git add -A
 	git commit -am $(ARGS)
 	git push
+update_main:
+	make push
+	$(VAR) = git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*'
+	git checkout main
+	git pull origin $(VAR)
+	git checkout $(VAR)
