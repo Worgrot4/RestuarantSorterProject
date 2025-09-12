@@ -1,3 +1,4 @@
+VAR=$(shell git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*')
 default:
 	git pull
 	git checkout $(ARGS)
@@ -8,7 +9,6 @@ push:
 	@-git push || true
 update_main:
 	make push
-	VAR="$(shell git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*')"
 	git checkout main
 	git pull origin $(VAR)
 	git checkout $(VAR)
