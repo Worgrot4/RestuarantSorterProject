@@ -9,7 +9,4 @@ push:
 update_main:
 	make push
 	VAR=$(shell git checkout | egrep -o '/[a-zA-z]*' | egrep -o '[a-zA-z]*')
-# 	git checkout main
-# 	git pull origin $(VAR)
-# 	git checkout $(VAR)
 	echo "$(VAR)"
