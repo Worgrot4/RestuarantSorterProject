@@ -4,7 +4,7 @@ default:
 	git pull origin main
 push:
 	git add -A
-	git commit -am $(ARGS)
+	git commit -am "$(ARGS)"
 	git push
 update_main:
 	make push
