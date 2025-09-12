@@ -12,3 +12,4 @@ update_main:
 	git checkout main
 	git pull origin $(VAR)
 	git checkout $(VAR)
+	make push
