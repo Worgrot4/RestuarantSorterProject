@@ -3,8 +3,8 @@ default:
 	git checkout $(ARGS)
 	git pull origin main
 push:
-	@-git add -A
-	@-git commit -am "$(ARGS)"
+	@-git add -A || true 
+	@-git commit -am "$(ARGS)" || true
 	@-git push || true
 update_main:
 	make push
